@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn and explore different web topics in our library.">
+    <link rel="canonical" href="https://webtopics.com">
+    <link rel="stylesheet" type="text/css" href="variables.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200;6..12,400;6..12,700&display=swap" rel="stylesheet">
+    <title>First Project</title>
+</head>
+    <link rel="stylesheet" href="styles.css">
+    <title>First Project</title>
+<body>
+    <header class="main-header">
+        <nav class="main-nav" role="navigation">
+            <a href="index.html" role="home" class="home">Web Topics</a>
+            <div class="nav-links">
+                <a href="#" class="nav-link" id="theme-switcher"><ion-icon name="moon-outline" class="icon-nav"></ion-icon> Dark Mode</a>
+                <a href="#" class="nav-link"><ion-icon name="heart-outline" class="icon-nav"></ion-icon> Favourites</a>
+            </div>
+        </nav>
+        
+        <section class="welcome-banner">
+            <div role="banner" class="banner-colors"></div>
+            <div class="banner-content">
+                <h2>Welcome to our website!</h2>
+                <p>We have a new design that's fresh, modern, and easy to use.</p>
+            </div>
+        </section> 
+    </header>
+    <div class="main-body">
+        <form action="#" method="get" class="search-section">
+            <div class="search-div">
+                <label for="search">
+                    <input type="search" name="search" id="search" placeholder="Search the website..."/>
+                </label>
+                <button type="submit" title="Search this website" class="search-button"><ion-icon name="search-outline"></ion-icon></button>
+            </div>
+            <div>
+                <div class="sort-dropdown-container dropdown-container">
+                    <label for="s-result">Sort by:</label>
+                    <select name="sort" id="s-result" class="form-group">
+                        <option value="">Default</option>
+                        <option value="rating">Rating (high to low)</option>
+                        <option value="topic">Topic</option>
+                        <option value="author">Author</option>
+                    </select>
+                </div>
+                <div class="filter-dropdown-container dropdown-container">
+                    <label for="f-result">Filter by:</label>
+                    <select name="filter" id="f-result" class="form-group">
+                        <option value="">Default</option>
+                        <option value="favourites">Favourites</option>
+                        <option value="stars">+3 Stars</option>
+                        <option value="backend">Backend</option>
+                        <option value="frontend">Frontend</option>
+                    </select>
+                </div>
+            </div>
+        </form>
+        <h2 class="search-results-header">"24" Web Topics Found</h2>
+        <main class="topics-container" role="listitem">
+            <article role="topic" class="topic-portion">
+                <figure role="img" class="topic-img">
+                    <a href="#"><img src="static\html.png" alt="html.png"></a>
+                </figure>
+                <section class="topic-content">
+                    <p class="topic-category">Web Development Languages</p>
+                    <h2 class="topic-title">HTML</h2>
+                    <p class="topic-rating"><span class="stars"></span></p>
+                    <p class="topic-author">Author: Sarah Smith</p>
+                </section>
+            </article>
+            <article role="topic" class="topic-portion">
+                <figure role="img" class="topic-img">
+                    <a href="#"><img src="static\css.webp" alt="css.webp"></a>
+                </figure>
+                <section class="topic-content">
+                    <p class="topic-category">Web Development Languages</p>
+                    <h2 class="topic-title">CSS</h2>
+                    <p class="topic-rating"><span class="stars"></span></p>
+                    <p class="topic-author">Author: David Lee</p>
+                </section>
+            </article>
+            <article role="topic" class="topic-portion">
+                <figure role="img" class="topic-img">
+                    <a href="#"><img src="static\html.png" alt="html.png"></a>
+                </figure>
+                <section class="topic-content">
+                    <p class="topic-category">Web Development Languages</p>
+                    <h2 class="topic-title">HTML</h2>
+                    <p class="topic-rating"><span class="stars"></span></p>
+                    <p class="topic-author">Author: Sarah Smith</p>
+                </section>
+            </article>
+            <article role="topic" class="topic-portion">
+                <figure role="img" class="topic-img">
+                    <a href="#"><img src="static\html.png" alt="html.png"></a>
+                </figure>
+                <section class="topic-content">
+                    <p class="topic-category">Web Development Languages</p>
+                    <h2 class="topic-title">HTML</h2>
+                    <p class="topic-rating"><span class="stars"></span></p>
+                    <p class="topic-author">Author: Sarah Smith</p>
+                </section>
+            </article>
+            <article role="topic" class="topic-portion">
+                <figure role="img" class="topic-img">
+                    <a href="#"><img src="static\html.png" alt="html.png"></a>
+                </figure>
+                <section class="topic-content">
+                    <p class="topic-category">Web Development Languages</p>
+                    <h2 class="topic-title">HTML</h2>
+                    <p class="topic-rating"><span class="stars"></span></p>
+                    <p class="topic-author">Author: Sarah Smith</p>
+                </section>
+            </article>
+            <article role="topic" class="topic-portion">
+                <figure role="img" class="topic-img">
+                    <a href="#"><img src="static\html.png" alt="html.png"></a>
+                </figure>
+                <section class="topic-content">
+                    <p class="topic-category">Web Development Languages</p>
+                    <h2 class="topic-title">HTML</h2>
+                    <p class="topic-rating"><span class="stars"></span></p>
+                    <p class="topic-author">Author: Sarah Smith</p>
+                </section>
+            </article>
+
+
+
+        </main>
+        <footer>
+            <p>Developed with <ion-icon name="heart" class="heart"></ion-icon> &#169 2023 </p>
+        </footer>
+    </div>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script src="scripts.js"></script>
+</body>
+</html>
