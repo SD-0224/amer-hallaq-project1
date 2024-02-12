@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn and explore different web topics in our library.">
+    <link rel="canonical" href="https://webtopics.com">
+    <link rel="stylesheet" type="text/css" href="variables.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="styles_details.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200;6..12,400;6..12,700&display=swap" rel="stylesheet">
+    <title>Topic Details</title>
+</head>
+<body>
+    <header class="main-header">
+        <nav class="main-nav" role="navigation">
+            <a href="index.html" role="home" class="home">Web Topics</a>
+            <div class="nav-links">
+                <a href="#" class="nav-link" id="theme-switcher"><ion-icon name="moon-outline" class="icon-nav"></ion-icon> Dark Mode</a>
+                <a href="#" class="nav-link"><ion-icon name="heart-outline" class="icon-nav"></ion-icon> Favourites</a>
+            </div>
+        </nav>
+        
+        <section class="welcome-banner">
+            <div role="banner" class="banner-colors"></div>
+            <div class="banner-content">
+                <h2>Welcome to our website!</h2>
+                <p>We have a new design that's fresh, modern, and easy to use.</p>
+            </div>
+        </section> 
+    </header>
+    <main class="topic-page">
+        <aside class="topic-aside">
+            <figure role="img" class="aside-img">
+                <img src="static\html.png" alt="html.png">
+            </figure>
+            <p class="aside-topic-name"><strong>HTML</strong> by <a href="#" class="author-link">Sarah Smith</a></p>
+            <div class="aside-favorite-box">
+                <p>Interested about this topic?</p>
+                <form action="" method="get">
+                    <button class="favorite-button">Add to Favourites <ion-icon name="heart"></ion-icon></button>
+                </form>
+                <p>Unlimited Credits</p>
+            </div>
+        </aside>
+        <section class="topic-details">
+            <div>
+                <p class="topic-category-details">Web Development Languages</p>
+                <h2 class="topic-title-details">HTML</h2>
+                <p class="topic-rating-details"><span class="stars"></span></p>
+                <p class="topic-description-details">HTML (Hypertext Markup Language) is the standard markup language for creating web pages and other information that can be displayed in a web browser. It provides a structure for content and defines how it should be displayed on a web page, including text, images, and multimedia. HTML is essential for creating static web pages and is a foundational technology for the World Wide Web.</p>
+            </div>
+        </section>
+        <section class="sub-topics">
+            <table role="table">
+            <tr><td><h2>HTML Sub Topics</h2></td></tr>
+            <tr><td><ion-icon name="checkmark-circle-outline" class="sub-topic-checkmark"></ion-icon> HTML syntax and structure</td></tr>
+            <tr><td><ion-icon name="checkmark-circle-outline" class="sub-topic-checkmark"></ion-icon> HTML elements and attributes</td></tr>
+            <tr><td><ion-icon name="checkmark-circle-outline" class="sub-topic-checkmark"></ion-icon> HTML forms and input elements</td></tr>
+            <tr><td><ion-icon name="checkmark-circle-outline" class="sub-topic-checkmark"></ion-icon> HTML tables and lists</td></tr>
+            <tr><td><ion-icon name="checkmark-circle-outline" class="sub-topic-checkmark"></ion-icon> HTML multimedia elements (audio, video, images)</td></tr>
+            <tr><td><ion-icon name="checkmark-circle-outline" class="sub-topic-checkmark"></ion-icon> HTML accessibility and semantic markup</td></tr>
+        </table>
+        </section>
+    </main>
+    <footer class="footer-details">
+        <p>Developed with <ion-icon name="heart" class="heart"></ion-icon> &#169 2023 </p>
+    </footer>
+</div>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script src="scripts.js"></script>
+</body>
+</html>
