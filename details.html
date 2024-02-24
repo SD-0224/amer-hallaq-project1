@@ -15,12 +15,12 @@
     <title>Topic Details</title>
 </head>
 <body>
-    <header class="main-header">
-        <nav class="main-nav" role="navigation">
-            <a href="index.html" role="home" class="home">Web Topics</a>
+    <header class="header bg_default">
+        <nav class="nav set-padding flex-sb" role="navigation">
+            <a href="index.html" role="home" class="home font-bold">Web Topics</a>
             <div class="nav-links">
-                <a href="#" class="nav-link" id="theme-switcher"><ion-icon name="moon-outline" class="icon-nav"></ion-icon> Dark Mode</a>
-                <a href="#" class="nav-link"><ion-icon name="heart-outline" class="icon-nav"></ion-icon> Favourites</a>
+                <a href="#" class="nav-link" id="theme-switcher"><ion-icon name="moon-outline" class="icon-nav"></ion-icon><span class="text-nav">Dark Mode</span></a>
+                <a href="#" class="nav-link" id="favourites-link"><ion-icon name="heart-outline" class="icon-nav"></ion-icon><span class="text-nav">Favourites</span></a>
             </div>
         </nav>
         <section class="welcome-banner">
@@ -31,12 +31,12 @@
                         <stop offset="1" stop-color="var(--brand-secondary)"/>
                     </linearGradient>
                 </defs>
-                <polygon class="polygon-left" points="0 0 1000 0 0 50"/>
-                <polygon class="polygon-right" points="1000 0 1000 50 500 24"/>
+                <polygon class="polygon-left" points="0 0 1010 0 0 50"/>
+                <polygon class="polygon-right" points="1000 0 1000 50 500 25"/>
             </svg>
             <div class="banner-content">
-                <h2>Welcome to our website!</h2>
-                <p>We have a new design that's fresh, modern, and easy to use.</p>
+                <h3 class="banner-head font-bold">Welcome to our website!</h3>
+                <p class="banner-sentence">We have a new design that's fresh, modern, and easy to use.</p>
             </div>
         </section> 
     </header>
@@ -47,15 +47,15 @@
             </figure>
             <p class="aside-topic-name"><strong>HTML</strong> by <a href="#" class="author-link">Sarah Smith</a></p>
             <div class="aside-favorite-box">
-                <p>Interested about this topic?</p>
-                <form action="" method="get">
-                    <button class="favorite-button">Add to Favourites <ion-icon name="heart"></ion-icon></button>
+                <p class="favourite-question">Interested about this topic?</p>
+                <form action="#" method="get" class="favourite-form">
+                    <button class="favorite-button"><span class="button-text">Add to Favourites </span><ion-icon name="heart-outline" class="heart-button"></ion-icon></button>
                 </form>
-                <p>Unlimited Credits</p>
+                <p class="unlimited-credits">Unlimited Credits</p>
             </div>
         </aside>
         <section class="topic-details">
-            <div>
+            <div class="topic-details-content">
                 <p class="topic-category-details">Web Development Languages</p>
                 <h2 class="topic-title-details">HTML</h2>
                 <p class="topic-rating-details"><span class="stars"></span></p>
@@ -77,6 +77,30 @@
     <footer class="footer-details">
         <p>Developed with <ion-icon name="heart" class="heart"></ion-icon> &#169 2023 </p>
     </footer>
+</div>
+<div class="favourites" id="favourites-hidden" aria-label="favourites">
+    <h2 class="favourites-heading set-padding">My Favourite Topics</h2>
+    <div class="favourites-container set-padding">
+        <article role="topic" class="topic-card favourite-topic-card">
+            <figure role="img" class="topic-img topic-img-favourite">
+                <a href="#"><img src="static\oauth.png" alt="oauth.png"></a>
+            </figure>
+            <section class="topic-content">
+                <h2 class="topic-title">OAuth</h2>
+                <p class="topic-rating topic-rating-favourite"><span class="stars"></span></p>
+
+            </section>
+        </article>
+        <article role="topic" class="topic-card favourite-topic-card">
+            <figure role="img" class="topic-img topic-img-favourite">
+                <a href="details.html"><img src="static\html.png" alt="html.png"></a>
+            </figure>
+            <section class="topic-content">
+                <h2 class="topic-title">HTML</h2>
+                <p class="topic-rating topic-rating-favourite"><span class="stars"></span></p>
+            </section>
+        </article>  
+    </div>
 </div>
 <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
